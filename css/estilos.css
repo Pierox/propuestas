@@ -287,6 +287,9 @@ a.logo-especiales {
     border-radius: 10px;
     display: table;
     width: 100%;
+    position: absolute;
+    z-index: 2;
+    background: #fff;
 }
 .box-select .box-options li{
     width: 100%;
