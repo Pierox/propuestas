@@ -89,9 +89,9 @@
                 <h3>Selecciona una categoría</h3>
                 <div class="box-select">
                     <div class="box">
-                        <h2 id="selectedbox1">Salud</h2> <i class="arrow-down"></i>
+                        <h2 id="selectedbox1" data-categoria="Salud" data-tema="salud-tema1">Salud</h2> <i class="arrow-down"></i>
                     </div>
-                    <div class="box-options"  style="display:none;">
+                    <div id="box-options-principal" class="box-options"  style="display:none;">
                         <ul>
                             <li id="salud-tema" class="selected"><span>Salud</span></li>
                             <li id="economia-tema"><span>Economía</span></li>
@@ -106,24 +106,26 @@
                 <div class="next-box">
                     <h3>Selecciona un tema</h3>
     
-                    <div class="box-select salud">
+                    <div class="box-select salud tema-activo">
                         <div class="box">
-                            <h2 id="selectedbox1">Lucha contra el COVID-19
+                            <h2 data-tema="salud-tema1" >Lucha contra el COVID-19
                             </h2> <i class="arrow-down"></i>
                         </div>
                         <div class="box-options"  style="display:none;">
                             <ul>
-                                <li id="salud-tema"><span>Lucha contra el COVID-19
+                                <li data-id="salud-tema1"><span>Lucha contra el COVID-19
                                 </span></li>
-                                <li id="economia-tema"><span>Redes primarias de atención
+                                <li data-id="salud-tema2"><span>Redes primarias de atención
                                 </span></li>
-                                <li id="educacion-tema"><span>Salud infantil y anemia
+                                <li data-id="salud-tema3"><span>Salud infantil y anemia
                                 </span></li>
-                                <li id="institucional-tema"><span>Mejoras para personal sanitario
+                                <li data-id="salud-tema4"><span>Sectores productivo
                                 </span></li>
-                                <li id="seguridad-tema"><span>Otras propuestas
+                                <li data-id="salud-tema5"><span>Mejoras para personal sanitario
                                 </span></li>
-                                <li id="social-tema"><span>Análisis por partido
+                                <li data-id="salud-tema6"><span>Otras propuestas
+                                </span></li>
+                                <li data-id="salud-tema7"><span>Análisis por partido
                                 </span></li>
                             </ul>
                         </div>
@@ -131,22 +133,24 @@
     
                     <div class="box-select economia" style="display:none;">
                         <div class="box">
-                            <h2 id="selectedbox1">Creación de empleo
+                            <h2 data-tema="economia-tema1">Creación de empleo
                             </h2> <i class="arrow-down"></i>
                         </div>
                         <div class="box-options"  style="display:none;">
                             <ul>
-                                <li id="salud-tema"><span>Creación de empleo
+                                <li data-id="economia-tema1"><span>Creación de empleo
                                 </span></li>
-                                <li id="economia-tema"><span>Informalidad
+                                <li data-id="economia-tema2"><span>Informalidad
                                 </span></li>
-                                <li id="educacion-tema"><span>Infraestructura
+                                <li data-id="economia-tema3"><span>Sectores productivos
                                 </span></li>
-                                <li id="institucional-tema"><span>Reforma tributaria
+                                <li data-id="economia-tema4"><span>Infraestructura
                                 </span></li>
-                                <li id="seguridad-tema"><span>Otros
+                                <li data-id="economia-tema5"><span>Reforma tributaria
                                 </span></li>
-                                <li id="social-tema"><span>Análisis por partido
+                                <li data-id="economia-tema6"><span>Otros
+                                </span></li>
+                                <li data-id="economia-tema7"><span>Análisis por partido
                                 </span></li>
                             </ul>
                         </div>
@@ -154,22 +158,22 @@
     
                     <div class="box-select educacion" style="display:none;">
                         <div class="box">
-                            <h2 id="selectedbox1">Educación a distancia
+                            <h2 data-tema="educacion-tema1">Educación a distancia
                             </h2> <i class="arrow-down"></i>
                         </div>
                         <div class="box-options"  style="display:none;">
                             <ul>
-                                <li id="salud-tema"><span>Educación a distancia
+                                <li data-id="educacion-tema1"><span>Educación a distancia
                                 </span></li>
-                                <li id="economia-tema"><span>Acompañamiento docente
+                                <li data-id="educacion-tema2"><span>Acompañamiento docente
                                 </span></li>
-                                <li id="educacion-tema"><span>Enfoque de igualdad de género
+                                <li data-id="educacion-tema3"><span>Enfoque de igualdad de género
                                 </span></li>
-                                <li id="institucional-tema"><span>Licenciamiento E.S.
+                                <li data-id="educacion-tema4"><span>Licenciamiento E.S.
                                 </span></li>
-                                <li id="seguridad-tema"><span>Otros
+                                <li data-id="educacion-tema5"><span>Otros
                                 </span></li>
-                                <li id="social-tema"><span>Análisis por partido
+                                <li data-id="educacion-tema6"><span>Análisis por partido
                                 </span></li>
                             </ul>
                         </div>
@@ -177,22 +181,22 @@
     
                     <div class="box-select institucional" style="display:none;">
                         <div class="box">
-                            <h2 id="selectedbox1">Lucha Anticorrupción
+                            <h2 data-tema="institucional-tema1">Lucha Anticorrupción
                             </h2> <i class="arrow-down"></i>
                         </div>
                         <div class="box-options"  style="display:none;">
                             <ul>
-                                <li id="salud-tema"><span>Lucha Anticorrupción
+                                <li data-id="institucional-tema1"><span>Lucha Anticorrupción
                                 </span></li>
-                                <li id="economia-tema"><span>Reformas constitucionales
+                                <li data-id="institucional-tema2"><span>Reformas constitucionales
                                 </span></li>
-                                <li id="educacion-tema"><span>Reforma de Justicia
+                                <li data-id="institucional-tema3"><span>Reforma de Justicia
                                 </span></li>
-                                <li id="institucional-tema"><span>Reforma del servicio civil
+                                <li data-id="institucional-tema4"><span>Reforma del servicio civil
                                 </span></li>
-                                <li id="seguridad-tema"><span>Descentralización 
+                                <li data-id="institucional-tema5"><span>Descentralización 
                                 </span></li>
-                                <li id="social-tema"><span>Análisis por partido
+                                <li data-id="institucional-tema6"><span>Análisis por partido
                                 </span></li>
                             </ul>
                         </div>
@@ -200,22 +204,22 @@
     
                     <div class="box-select seguridad" style="display:none;">
                         <div class="box">
-                            <h2 id="selectedbox1">Prevención del delito
+                            <h2 data-tema="seguridad-tema1">Prevención del delito
                             </h2> <i class="arrow-down"></i>
                         </div>
                         <div class="box-options"  style="display:none;">
                             <ul>
-                                <li id="salud-tema"><span>Prevención del delito
+                                <li data-id="seguridad-tema1"><span>Prevención del delito
                                 </span></li>
-                                <li id="economia-tema"><span>Crimen Organizado
+                                <li data-id="seguridad-tema2"><span>Crimen Organizado
                                 </span></li>
-                                <li id="educacion-tema"><span>Reformas PNP
+                                <li data-id="seguridad-tema3"><span>Reformas PNP
                                 </span></li>
-                                <li id="institucional-tema"><span>Prevención y atención a la violencia de género
+                                <li data-id="seguridad-tema4"><span>Prevención y atención a la violencia de género
                                 </span></li>
-                                <li id="seguridad-tema"><span>Otras propuestas 
+                                <li  data-id="seguridad-tema5"><span>Otras propuestas 
                                 </span></li>
-                                <li id="social-tema"><span>Análisis por partido
+                                <li data-id="seguridad-tema6"><span>Análisis por partido
                                 </span></li>
                             </ul>
                         </div>
@@ -223,22 +227,22 @@
     
                     <div class="box-select social" style="display:none;">
                         <div class="box">
-                            <h2 id="selectedbox1">Protección social (pensiones, seguro de desempleo)
+                            <h2 data-tema="social-tema1">Protección social (pensiones, seguro de desempleo)
                             </h2> <i class="arrow-down"></i>
                         </div>
                         <div class="box-options"  style="display:none;">
                             <ul>
-                                <li id="salud-tema"><span>Protección social (pensiones, seguro de desempleo)
+                                <li data-id="social-tema1"><span>Protección social (pensiones, seguro de desempleo)
                                 </span></li>
-                                <li id="economia-tema"><span>Igualdad de oportunidades para Hombres y Mujeres
+                                <li data-id="social-tema2"><span>Igualdad de oportunidades para Hombres y Mujeres
                                 </span></li>
-                                <li id="educacion-tema"><span>Reconocimiento de Derechos (LGTB)
+                                <li data-id="social-tema3"><span>Reconocimiento de Derechos (LGTB)
                                 </span></li>
-                                <li id="institucional-tema"><span>Inclusión de poblaciones vulnerables
+                                <li data-id="social-tema4"><span>Inclusión de poblaciones vulnerables
                                 </span></li>
-                                <li id="seguridad-tema"><span>Medio ambiente
+                                <li data-id="social-tema5"><span>Medio ambiente
                                 </span></li>
-                                <li id="social-tema"><span>Análisis por partido
+                                <li data-id="social-tema6"><span>Análisis por partido
                                 </span></li>
                             </ul>
                         </div>
@@ -306,9 +310,10 @@
             </div>
           
 
-            <div class="cont-escena2" style="display:none;">
+            <!-- <div class="cont-escena2" style="display:none;"> -->
+            <div class="cont-escena2">
                 <h2>Lucha contra el COVID-19</h2>
-                <div class="cerrar" id="cerrarEscena2"></div>
+                <a class="cerrar" id="cerrarEscena2" href="index.html"></a>
                 <div class="cont-propuesta" id="propuesta1">
                     <div class="candidato-perfil">
                         <ul>
@@ -330,8 +335,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="cont-text-propuesta">
-                        Asegurar la disposición de vacunas, oxígeno, respiradores, pruebas moleculares y rastreo de contactos. Concurso de laboratorios privados, universidades y centros de investigación para ampliar la capacidad de diagnosticar.
+                    <div id="contTextPropuesta1" class="cont-text-propuesta">
                     </div>
                 </div>
 
@@ -356,8 +360,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="cont-text-propuesta">
-                        Asegurar la disposición de vacunas, oxígeno, respiradores, pruebas moleculares y rastreo de contactos. Concurso de laboratorios privados, universidades y centros de investigación para ampliar la capacidad de diagnosticar.
+                    <div id="contTextPropuesta2" class="cont-text-propuesta">
                     </div>
                 </div>
             </div>
@@ -372,6 +375,7 @@
     
 
     <script src="js/jquery-3.4.1.min.js"></script> 
+    <script src="js/xlsx.full.min.js"></script> 
     <script src="js/main.js"></script> 
     <!-- <script>
         //Get the button
