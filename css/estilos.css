@@ -401,6 +401,7 @@ i.arrow-down{
     background-position: center center;
     overflow: hidden;
     position: relative;
+    border: 2px solid #7c7c7c;
 }
 .candidato .photo img{
     width: 100px;
