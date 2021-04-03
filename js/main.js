@@ -187,7 +187,7 @@ class UI{
 }
 
 
-const urlExcel = "propuestas/xlsx/";
+const urlExcel = "xlsx/";
 
 
 /* CANDIDATOS A LA Propuestas */
