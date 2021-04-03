@@ -187,7 +187,7 @@ class UI{
 }
 
 
-const urlExcel = "https://pierox.github.io/propuestas/xlsx/";
+const urlExcel = "/xlsx/";
 
 
 /* CANDIDATOS A LA Propuestas */
