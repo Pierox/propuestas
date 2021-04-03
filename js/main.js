@@ -62,7 +62,7 @@ $(".partido").on("click",function(){
         $("#candidato1 .cerrar").show();
         $("#candidato1 h4").text(texto);
         $("#candidato1 h2").text(candidato);
-        $('#candidato1 .photo').prepend('<img src="'+foto+'" />')
+        $('#candidato1 .photo').css('background-color', '#FFFFFF').prepend('<img src="'+foto+'" />')
         $('#contTextPropuesta1 p').hide();
         $('#contTextPropuesta1 p[data-partido="'+texto+'"]').show();
     }
@@ -75,7 +75,7 @@ $(".partido").on("click",function(){
             $("#candidato2 .cerrar").show();
             $("#candidato2 h4").text(texto);
             $("#candidato2 h2").text(candidato);
-            $('#candidato2 .photo').prepend('<img src="'+foto+'" />')
+            $('#candidato2 .photo').css('background-color', '#FFFFFF').prepend('<img src="'+foto+'" />')
             $('#contTextPropuesta2 p').hide();
             $('#contTextPropuesta2 p[data-partido="'+texto+'"]').show();
             if(selec1 == 0 && selec2 ==1){
