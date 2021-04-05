@@ -3,6 +3,11 @@
 $(".box").on("click",function(){
     $(this).nextUntil(".box-option").toggle()
 })
+$("#selectedbox1").parent('.box').on("click",function(){
+    $(".next-box .box-select .box-options").hide();
+})
+
+
 $(".box-options li").on("click",function(){
     var texto = $(this).children('span').text();
     $(this).addClass("selected").siblings().removeClass("selected").parent().parent().hide().prev('.box').children('h2').text(texto);
